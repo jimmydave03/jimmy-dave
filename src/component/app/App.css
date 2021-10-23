@@ -29,7 +29,7 @@
   color: #61dafb;
 }
 
-.default-logo {
+.App-default-logo {
   background-color: #1976d2;
   border-radius: 10%;
   width: 20px;
@@ -38,11 +38,6 @@
   opacity: 90%;
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.App-ft-30 {
+  font-size: 30px !important;
+}

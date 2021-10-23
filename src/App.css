@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,11 +29,20 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.default-logo {
+  background-color: #1976d2;
+  border-radius: 10%;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  opacity: 90%;
+}
+
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */

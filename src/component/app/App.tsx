@@ -1,14 +1,11 @@
 import React from 'react';
+import Experience from '../experience/Experience';
 import './App.css';
 
-class App extends React.Component {
+export default class App extends React.Component {
   render() : React.ReactElement {
     return (
-      <div className="App">
-        
-      </div>
+      <Experience />
     );
   }
-
 }
-export default App;

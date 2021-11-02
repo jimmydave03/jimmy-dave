@@ -1,0 +1,9 @@
+.Education-header {
+    background-color: #BA412E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    padding: 20px 0 35px 0;
+}

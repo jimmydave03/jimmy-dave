@@ -1,0 +1,9 @@
+.Skills-header {
+    background-color: #F4DF4EFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    padding: 20px 0 35px 0;
+}

@@ -74,3 +74,41 @@ export const EXPERIENCE : JobExperience[] = [
         ]
     }
 ]; 
+
+export const SKILLS = {
+    skills: [
+        "REST Api development", 
+        "Web App Development", 
+        "Product Development", 
+        "Alexa Skill Development"
+    ],
+    programming: [
+        "Java",
+        "Spring Framework",
+        "Angular",
+        "AWS",
+        "Agile",
+        "Jenkins",
+        "GIT",
+        "Linux",
+        "Any many more..."
+    ]
+};
+
+export const PORTFOLIO = [
+    {
+        name: 'Auditor app',
+        title: 'SAAS platform to perform Audit in supply chain.',
+        url: ''
+    },
+    {
+        name: 'Advertising AI',
+        title: 'Platform help stores to target customer based on location.',
+        url: ''
+    },
+    {
+        name: 'Hindu Info',
+        title: 'Hindu info is an informative Amazon Alexa skill that will give you interesting facts about Hinduism.',
+        url: 'https://www.amazon.in/Jimmy-Dave-Hindu-Info/dp/B07BWYBLH8'
+    }
+];

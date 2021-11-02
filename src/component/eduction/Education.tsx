@@ -4,7 +4,7 @@ import { Timeline, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeC
 import { Typography } from '@mui/material';
 
 export default class Education extends Component {
-    render() {
+    render() : React.ReactElement {
         return (
             <div className="Education-header">
                 <Timeline position="alternate">
@@ -23,17 +23,18 @@ export default class Education extends Component {
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
-                        <TimelineOppositeContent color="text.secondary">
-                            May 2008 - Apr 2011
+                        <TimelineOppositeContent>
+                            <Typography variant="h6" component="span">
+                                Diploma in Computer Engineering
+                            </Typography>
+                            <Typography>Gujarat Technological University</Typography>
+                            
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
                         </TimelineSeparator>
-                        <TimelineContent>
-                        <Typography variant="h6" component="span">
-                            Diploma in Computer Engineering
-                        </Typography>
-                        <Typography>Gujarat Technological University</Typography>
+                        <TimelineContent color="text.secondary">
+                            May 2008 - Apr 2011
                         </TimelineContent>
                     </TimelineItem>
                 </Timeline>

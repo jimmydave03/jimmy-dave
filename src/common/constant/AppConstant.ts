@@ -99,12 +99,17 @@ export const PORTFOLIO = [
     {
         name: 'Auditor app',
         title: 'SAAS platform to perform Audit in supply chain.',
-        url: ''
+        url: 'https://www.qima.com/'
     },
     {
         name: 'Advertising AI',
-        title: 'Platform help stores to target customer based on location.',
+        title: 'Platform help target customers for businesses.',
         url: ''
+    },
+    {
+        name: 'DocsNear.Me',
+        title: 'Platform to book and consult a specialist online',
+        url: 'https://docsnear.me/index.html'
     },
     {
         name: 'Hindu Info',

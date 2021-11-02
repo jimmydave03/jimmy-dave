@@ -2,7 +2,6 @@ import { Card, CardContent, CardHeader, Container, Grid, Typography, CardActions
 import React, { Component } from 'react'
 import { PORTFOLIO } from '../../common/constant/AppConstant'
 import './Portfolio.css'
-import { styled } from '@mui/material/styles'
 
 interface PortfolioProps {
     id?: string;
@@ -18,7 +17,7 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
     render() : React.ReactElement {
         return (
             <div className="Portfolio Portfolio-header">
-                <Typography variant="h4" justifySelf="center" component="div" mt={1} mb={2} sx={{color: 'white'}}>
+                <Typography variant="h4" justifySelf="center" component="div" mt={1} mb={2}>
                     Some Cool Work
                 </Typography>
                 <Container>

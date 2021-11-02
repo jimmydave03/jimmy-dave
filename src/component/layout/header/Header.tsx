@@ -1,7 +1,7 @@
 import React from "react";
 import './Header.css';
 import logo from '../../../assets/jimmy-dave.png';
-import { LinkedIn, GitHub, ViewListRounded, BusinessCenterRounded } from '@mui/icons-material';
+import { LinkedIn, GitHub, ViewListRounded } from '@mui/icons-material';
 import { Grid } from '@mui/material';
 import Nav from '../nav/Nav';
 import {EXTERNAL_LINKS} from '../../../common/constant/AppConstant'
@@ -18,29 +18,24 @@ export default class Header extends React.Component {
                     </p>
                     <div>
                         <Grid container spacing={2}>
-                        <Grid item xs={3}>
-                            <a href={this.links.linkedIn} target="_blank" rel="noopener noreferrer">
-                            <LinkedIn color="primary" titleAccess="LinkedIn" className="Header-ft-30" ></LinkedIn>
-                            </a>
-                        </Grid>
-                        <Grid item xs={3}>
-                            <a href={this.links.gitHub} target="_blank" rel="noopener noreferrer">
-                            <GitHub color="primary" titleAccess="Github" className="Header-ft-30"></GitHub>
-                            </a>
-                        </Grid>
-                        <Grid item xs={3}>
-                            <a href={this.links.stackOverflow} target="_blank" rel="noopener noreferrer">
-                            <ViewListRounded color="primary" titleAccess="Stack Overflow" className="Header-ft-30"></ViewListRounded>
-                            </a>
-                        </Grid>
-                        <Grid item xs={3}>
-                            <a href={this.links.upWork} target="_blank" rel="noopener noreferrer">
-                            <BusinessCenterRounded color="primary" titleAccess="UpWork" className="Header-ft-30"></BusinessCenterRounded>
-                            </a>
-                        </Grid>
+                            <Grid item xs={3}>
+                                <a href={this.links.linkedIn} target="_blank" rel="noopener noreferrer">
+                                <LinkedIn color="primary" titleAccess="LinkedIn" className="Header-ft-30" ></LinkedIn>
+                                </a>
+                            </Grid>
+                            <Grid item xs={3}>
+                                <a href={this.links.gitHub} target="_blank" rel="noopener noreferrer">
+                                <GitHub color="primary" titleAccess="Github" className="Header-ft-30"></GitHub>
+                                </a>
+                            </Grid>
+                            <Grid item xs={3}>
+                                <a href={this.links.stackOverflow} target="_blank" rel="noopener noreferrer">
+                                <ViewListRounded color="primary" titleAccess="Stack Overflow" className="Header-ft-30"></ViewListRounded>
+                                </a>
+                            </Grid>
                         </Grid>
                     </div>
-                    <Nav  open = {false}/>
+                    {/* <Nav  open = {false}/> */}
                 </header>
             </div>
         );

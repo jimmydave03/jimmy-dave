@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, Container, Grid, Typography, CardActions, Button } from '@mui/material'
 import React, { Component } from 'react'
+import Scrollbars from 'react-custom-scrollbars';
 import { PORTFOLIO } from '../../common/constant/AppConstant'
 import './Portfolio.css'
 
@@ -29,9 +30,11 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
                                         <CardHeader title={val.name} />
                                         <hr />
                                         <CardContent>
-                                            <Typography variant="body1" justifySelf="center" component="div">
-                                                {val.title}
-                                            </Typography>
+                                            <Scrollbars style={{height:'100px'}}>
+                                                <Typography variant="body1" justifySelf="center" component="div">
+                                                    {val.title}
+                                                </Typography>
+                                            </Scrollbars>
                                         </CardContent>
                                         {
                                             val.url.length > 0 &&
@@ -41,6 +44,11 @@ export default class Portfolio extends Component<PortfolioProps, PortfolioState>
                                                         Visit
                                                     </Button>
                                                 </a> 
+                                            </CardActions>
+                                        }
+                                        {
+                                            val.url.length === 0 &&
+                                            <CardActions style={{height:'35px'}}>
                                             </CardActions>
                                         }
                                     </Card>

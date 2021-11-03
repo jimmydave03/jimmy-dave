@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, Grid, Typography, Container } from '@mui
 import { EXPERIENCE } from '../../common/constant/AppConstant';
 import { JobExperience } from '../../common/interface/JobExperience';
 import './Experience.css';
+import { Scrollbars } from 'react-custom-scrollbars'
 
 interface ExperienceProps {
     id?: string;
@@ -29,23 +30,25 @@ export default class Experience extends Component<ExperienceProps, ExperienceSta
                         this.experienceList.map((value, index) => (
                             <Grid item xs={12} sm={6} md={4} key={index}>
                                 <Card className="Experience-card">
-                                <CardHeader title={
-                                    <a href={value.url} target="_blank" rel="noreferrer">{value.company}</a>
-                                } subheader={
-                                    <span>{value.position} <br/> {value.date}</span>
-                                    }/>                  
-                                <CardContent className="Exp-Card-Overflow">
-                                    <Typography variant="body1" component="div" justifySelf="left">
-                                    <ul>
-                                    {value.description.map((point, index) => (
-                                        <li key={index}>
-                                            {point}
-                                        
-                                        </li>
-                                    ))}
-                                    </ul>
-                                    </Typography>
-                                </CardContent>
+                                    <CardHeader title={
+                                        <a href={value.url} target="_blank" rel="noreferrer">{value.company}</a>
+                                    } subheader={
+                                        <span>{value.position} <br/> {value.date}</span>
+                                        }/>
+                                    <Scrollbars style={{height:'300px'}}>                
+                                        <CardContent>
+                                            <Typography variant="body1" component="div" justifySelf="left">
+                                            <ul>
+                                            {value.description.map((point, index) => (
+                                                <li key={index}>
+                                                    {point}
+                                                
+                                                </li>
+                                            ))}
+                                            </ul>
+                                            </Typography>
+                                        </CardContent>
+                                    </Scrollbars>
                                 </Card> 
                             </Grid>
                         ))

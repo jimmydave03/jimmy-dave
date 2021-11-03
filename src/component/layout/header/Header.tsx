@@ -3,7 +3,6 @@ import './Header.css';
 import logo from '../../../assets/jimmy-dave.png';
 import { LinkedIn, GitHub, ViewListRounded } from '@mui/icons-material';
 import { Grid } from '@mui/material';
-import Nav from '../nav/Nav';
 import {EXTERNAL_LINKS} from '../../../common/constant/AppConstant'
 
 export default class Header extends React.Component {

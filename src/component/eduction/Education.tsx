@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Education.css'
-import { Timeline, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@mui/lab';
+import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@mui/lab';
 import { Typography } from '@mui/material';
 
 export default class Education extends Component {
@@ -17,6 +17,7 @@ export default class Education extends Component {
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
+                            <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent  color="text.secondary">
                             Jul 2011 - Jun 2014
@@ -32,6 +33,7 @@ export default class Education extends Component {
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot />
+                            <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent color="text.secondary">
                             May 2008 - Apr 2011
